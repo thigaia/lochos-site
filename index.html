@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lochos — Um pedido de socorro que ninguém percebe</title>
+  <meta name="description" content="Lochos é um app de segurança pessoal ativado por voz. Diga uma palavra-chave discreta e ele envia, em silêncio, um SMS com sua localização para seus contatos de confiança." />
+  <meta name="theme-color" content="#0A0A0A" />
+  <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+  <link rel="apple-touch-icon" href="assets/logo-mark.png" />
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lochos — Um pedido de socorro que ninguém percebe" />
+  <meta property="og:description" content="Segurança pessoal ativada por voz. Diga uma palavra-chave discreta e o Lochos avisa seus contatos com sua localização — sem telas, sem sons." />
+  <meta property="og:image" content="assets/logo-mark.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Lochos",
+    "operatingSystem": "Android",
+    "applicationCategory": "SecurityApplication",
+    "description": "App de segurança pessoal ativado por voz. Uma palavra-chave discreta dispara um SMS de emergência com localização para contatos de confiança.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="#topo" class="brand" aria-label="Lochos — início">
+        <span class="brand-mark"><img src="assets/capybara-white.png" alt="" width="28" height="28" /></span>
+        Lochos
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#privacidade">Privacidade</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+      <a href="#baixar" class="btn btn-primary nav-cta">Baixar o app</a>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Segurança pessoal ativada por voz</span>
+          <h1>Um pedido de socorro que <span class="hl">ninguém ao redor percebe</span>.</h1>
+          <p class="lead">
+            O Lochos escuta uma palavra-chave sua a cada vez que você desbloqueia o celular.
+            Quando você a diz, ele envia em silêncio um SMS com sua localização para seus
+            contatos de confiança — sem telas, sem sons, sem que o agressor saiba.
+          </p>
+
+          <div class="hero-cta" id="baixar">
+            <a href="#" class="store-badge" aria-label="Em breve na Google Play">
+              <span class="sb-soon">Em breve</span>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#5C8AFF" d="M48 59.4c-4.9 5.2-7.7 13.2-7.7 23.6v346c0 10.4 2.8 18.4 7.7 23.6l1.2 1.1L243 260.9v-9.8L49.2 58.3 48 59.4z"/><path fill="#E9BE3E" d="M307.6 325.5L243 260.9v-9.8l64.7-64.6 1.5.8 76.5 43.5c21.9 12.4 21.9 32.8 0 45.2l-76.5 43.5-1.6.8z"/><path fill="#2ECC71" d="M309.1 324.7L243 258.5 48 453.5c7.2 7.6 19.1 8.6 32.6 1L309.1 324.7z"/><path fill="#C0392B" d="M309.1 187.3L80.6 57.5C67.1 49.9 55.2 50.9 48 58.5l195 195 66.1-66.2z"/></svg>
+              <span>
+                <span class="sb-top">Disponível</span><br />
+                <span class="sb-main">Google Play</span>
+              </span>
+            </a>
+            <a href="#como-funciona" class="btn btn-ghost">Ver como funciona</a>
+          </div>
+
+          <div class="hero-trust">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Nenhuma indicação na tela
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Localização junto ao alerta
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Funciona com o app fechado
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orb"></div>
+          <div class="pulse-ring"></div>
+          <div class="pulse-ring"></div>
+          <div class="pulse-ring"></div>
+          <img class="hero-capy" src="assets/capybara-white.png" alt="" width="320" height="320" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EMPATIA ==================== -->
+    <section class="empathy" aria-labelledby="empatia-h">
+      <div class="wrap reveal">
+        <h2 class="quote" id="empatia-h">Nem sempre dá para <em>gritar por ajuda</em>.</h2>
+        <p class="lead" style="margin-inline:auto;text-align:center;">
+          Em um assalto, em casa, dentro do carro — há situações em que pegar o telefone e ligar
+          para a polícia levanta suspeita e coloca você em mais risco. O Lochos nasceu para esses
+          momentos: pedir ajuda parece apenas uma palavra qualquer da conversa.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== COMO FUNCIONA ==================== -->
+    <section id="como-funciona" aria-labelledby="cf-h">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Como funciona</span>
+          <h2 id="cf-h">Três passos. Depois é só viver normalmente.</h2>
+          <p class="lead">Você configura uma vez. A proteção passa a rodar sozinha, em segundo plano, a cada desbloqueio.</p>
+        </div>
+
+        <div class="grid cols-3 steps">
+          <article class="card step reveal">
+            <div class="num"></div>
+            <h3>Escolha sua palavra-chave</h3>
+            <p>Uma palavra que você diria com naturalidade sob pressão — como <strong>"exatamente"</strong> ou <strong>"entendido"</strong>. Nada de "socorro": a graça é não levantar suspeita.</p>
+          </article>
+          <article class="card step reveal">
+            <div class="num"></div>
+            <h3>Cadastre seus contatos</h3>
+            <p>Defina quem recebe o alerta — pessoas de confiança que saberão o que fazer. O Lochos guarda tudo pronto para o momento em que você precisar.</p>
+          </article>
+          <article class="card step reveal">
+            <div class="num"></div>
+            <h3>Diga a palavra na emergência</h3>
+            <p>Ao ouvir sua palavra, o Lochos dispara em silêncio um SMS com sua localização para os contatos. Sem abrir o app, sem tela, sem som.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RECURSOS ==================== -->
+    <section id="recursos" aria-labelledby="rec-h">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Recursos</span>
+          <h2 id="rec-h">Discreto por fora. Robusto por dentro.</h2>
+          <p class="lead">Cada detalhe foi pensado para funcionar exatamente quando falhar não é uma opção.</p>
+        </div>
+
+        <div class="grid cols-3">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><path d="m3 3 18 18" stroke-linecap="round"/></svg></div>
+            <h3>Totalmente invisível</h3>
+            <p>Nenhuma indicação visual ou sonora durante o monitoramento. Quem está ao seu lado não faz ideia.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3" stroke-linecap="round"/></svg></div>
+            <h3>Ativado por voz</h3>
+            <p>Uma palavra natural da sua conversa dispara o alerta. Nada de botões escondidos ou gestos que você pode esquecer sob estresse.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3>Localização no alerta</h3>
+            <p>O SMS chega com sua posição por GPS, para que seus contatos saibam para onde ir — não apenas que algo aconteceu.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Resiliente de verdade</h3>
+            <p>O alerta sai mesmo com o app fechado e sobrevive a reinícios do celular. A proteção não depende de você lembrar de abrir nada.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9" stroke-linecap="round"/><path d="M3 3v6h6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Reenvio automático</h3>
+            <p>Se a situação persistir, o Lochos pode reenviar o alerta com a localização atualizada até você confirmar que está bem.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3Z"/><path d="M6 21v-1a6 6 0 0 1 12 0v1" stroke-linecap="round"/><path d="m16 8 2 2 3-3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Desarme por biometria</h3>
+            <p>Foi um alarme falso ou você já está segura? Um toque com sua digital encerra o protocolo e avisa que está tudo bem.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PRIVACIDADE ==================== -->
+    <section id="privacidade" class="privacy" aria-labelledby="priv-h">
+      <div class="wrap">
+        <div class="grid cols-2" style="align-items:center;gap:clamp(2rem,5vw,3.5rem);">
+          <div class="reveal">
+            <span class="eyebrow">Privacidade &amp; transparência</span>
+            <h2 id="priv-h" style="margin:1rem 0;">Segurança que respeita seus dados.</h2>
+            <p class="lead">
+              O Lochos só faz uma coisa com o microfone: procurar a sua palavra-chave.
+              Somos diretos sobre o que acontece com o áudio e com quem ele fala.
+            </p>
+            <div class="third-parties">
+              <span class="chip">Transcrição por <b>OpenAI</b></span>
+              <span class="chip">Login com <b>Firebase</b></span>
+              <span class="chip">Registros no <b>Supabase</b></span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <ul class="privacy-list">
+              <li><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke-linecap="round"/></svg>
+                <span><strong>O áudio não é armazenado.</strong> Ele é transcrito para verificar a palavra-chave e descartado na hora — não fica guardado na nuvem.</span></li>
+              <li><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span><strong>Você controla os contatos.</strong> O alerta vai só para quem você cadastrou, por SMS, do seu próprio número.</span></li>
+              <li><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span><strong>Transparência sobre terceiros.</strong> Explicamos exatamente o que a OpenAI, o Firebase e o Supabase recebem — na Política de Privacidade.</span></li>
+              <li><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 2v10M12 2a10 10 0 1 0 10 10" stroke-linecap="round"/></svg>
+                <span><strong>Requer internet.</strong> A verificação da palavra acontece na nuvem — sem conexão, nenhuma checagem é feita (e o app avisa).</span></li>
+            </ul>
+            <a href="privacidade.html" class="btn btn-ghost btn-block" style="margin-top:1.5rem;">Ler a Política de Privacidade</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PLANOS ==================== -->
+    <section id="planos" aria-labelledby="planos-h">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Planos</span>
+          <h2 id="planos-h">Comece protegido. Evolua quando quiser.</h2>
+          <p class="lead">A proteção essencial é gratuita. Os planos pagos ampliam alcance, localização e controle.</p>
+        </div>
+
+        <div class="grid cols-3 plans">
+          <article class="card plan reveal">
+            <div class="plan-name">Gratuito</div>
+            <div class="price">R$ 0</div>
+            <div class="price-note">Para sempre</div>
+            <ul>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Alerta por SMS ativado por voz</li>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> 1 contato de emergência</li>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Proteção em segundo plano</li>
+              <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke-linecap="round"/></svg> Localização no SMS</li>
+              <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke-linecap="round"/></svg> Mensagens personalizadas</li>
+            </ul>
+            <a href="#baixar" class="btn btn-ghost btn-block">Começar grátis</a>
+          </article>
+
+          <article class="card plan featured reveal">
+            <span class="tag">Mais escolhido</span>
+            <div class="plan-name gold-text">Premium</div>
+            <div class="price">R$ 29,90 <small>/mês</small></div>
+            <div class="price-note">7 dias grátis • cancele quando quiser</div>
+            <ul>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Tudo do plano Gratuito</li>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Até 3 contatos de emergência</li>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Localização por GPS no SMS</li>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Mensagens e atraso personalizáveis</li>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Reenvio recorrente do alerta</li>
+            </ul>
+            <a href="#baixar" class="btn btn-primary btn-block">Experimentar 7 dias grátis</a>
+          </article>
+
+          <article class="card plan reveal">
+            <div class="plan-name">Familiar</div>
+            <div class="price">Em breve</div>
+            <div class="price-note">&nbsp;</div>
+            <ul>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Tudo do plano Premium</li>
+              <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Proteção para a família toda</li>
+              <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2 2" stroke-linecap="round"/></svg> Múltiplas palavras-chave</li>
+              <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2 2" stroke-linecap="round"/></svg> Notificação por push</li>
+              <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2 2" stroke-linecap="round"/></svg> Ícone disfarçado</li>
+            </ul>
+            <a href="#baixar" class="btn btn-ghost btn-block">Avise-me quando chegar</a>
+          </article>
+        </div>
+        <p style="text-align:center;margin-top:1.5rem;font-size:.85rem;color:var(--hint);">
+          Valores e recursos podem mudar até o lançamento oficial na Google Play.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== AVISO DE SEGURANÇA ==================== -->
+    <section aria-labelledby="aviso-h" style="padding-top:0;">
+      <div class="wrap">
+        <div class="safety reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linejoin="round"/><path d="M12 9v4M12 17h.01" stroke-linecap="round"/></svg>
+          <div>
+            <h3 id="aviso-h">O Lochos é uma camada extra — não um substituto</h3>
+            <p>
+              Sempre que possível, acione os serviços de emergência: <strong>190</strong> (Polícia),
+              <strong>192</strong> (SAMU) e <strong>180</strong> (Central de Atendimento à Mulher).
+              O envio do SMS depende de rede móvel disponível e <strong>não é garantido em 100% dos casos</strong>
+              (área sem sinal, celular sem bateria, etc.).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section id="faq" aria-labelledby="faq-h">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2 id="faq-h">Tudo o que você precisa saber</h2>
+        </div>
+
+        <div class="faq reveal">
+          <div class="faq-item">
+            <button class="faq-q" type="button">Alguém percebe que o celular está gravando?</button>
+            <div class="faq-a"><p>Não. A gravação é completamente silenciosa — sem luz, sem ícone, sem som. Ela acontece por poucos segundos logo após o desbloqueio e serve apenas para procurar a sua palavra-chave.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">O app funciona sem internet?</button>
+            <div class="faq-a"><p>Não. A verificação da palavra-chave acontece na nuvem e exige conexão. Sem internet, nenhuma checagem é feita — e o app avisa você por notificação, em vez de falhar em silêncio. Recomendamos manter os dados móveis ativos.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Qual palavra-chave devo escolher?</button>
+            <div class="faq-a"><p>Uma palavra que você diria com naturalidade ao colaborar com um agressor — como "exatamente", "entendido" ou "infelizmente". Evite "socorro" ou "ajuda": a ideia é justamente não levantar suspeita. Durante a configuração, você testa a palavra em voz alta antes de confirmar.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Meus áudios ficam guardados em algum lugar?</button>
+            <div class="faq-a"><p>Não na nuvem. O áudio é transcrito para verificar a palavra-chave e descartado na hora. Detalhamos exatamente o que fica registrado — e o que não fica — na <a href="privacidade.html">Política de Privacidade</a>.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Funciona com o celular bloqueado ou o app fechado?</button>
+            <div class="faq-a"><p>Sim. A proteção roda em segundo plano e o alerta é disparado de forma resiliente, sobrevivendo até ao fechamento do app e a reinícios do celular. Para máxima confiabilidade, o app orienta você a desativar as otimizações de bateria para o Lochos.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Quais permissões o app pede?</button>
+            <div class="faq-a"><p>Microfone (para ouvir a palavra-chave), localização (para incluir no alerta), SMS (para enviar o aviso) e contatos (para você escolher quem será avisado). Cada uma é usada apenas para a função de segurança correspondente.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Posso cancelar a assinatura quando quiser?</button>
+            <div class="faq-a"><p>Sim. A assinatura Premium é gerenciada pela Google Play e pode ser cancelada a qualquer momento, sem multa. Você continua com o plano Gratuito depois disso.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section aria-labelledby="cta-h">
+      <div class="wrap">
+        <div class="final-cta reveal">
+          <span class="eyebrow">Comece hoje</span>
+          <h2 id="cta-h" style="margin-top:1rem;">Uma palavra pode ser o seu pedido de socorro.</h2>
+          <p class="lead">Instale o Lochos, escolha sua palavra e tenha uma camada de proteção que ninguém vê — mas que está sempre lá.</p>
+          <div class="hero-cta">
+            <a href="#" class="store-badge" aria-label="Em breve na Google Play">
+              <span class="sb-soon">Em breve</span>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#5C8AFF" d="M48 59.4c-4.9 5.2-7.7 13.2-7.7 23.6v346c0 10.4 2.8 18.4 7.7 23.6l1.2 1.1L243 260.9v-9.8L49.2 58.3 48 59.4z"/><path fill="#E9BE3E" d="M307.6 325.5L243 260.9v-9.8l64.7-64.6 1.5.8 76.5 43.5c21.9 12.4 21.9 32.8 0 45.2l-76.5 43.5-1.6.8z"/><path fill="#2ECC71" d="M309.1 324.7L243 258.5 48 453.5c7.2 7.6 19.1 8.6 32.6 1L309.1 324.7z"/><path fill="#C0392B" d="M309.1 187.3L80.6 57.5C67.1 49.9 55.2 50.9 48 58.5l195 195 66.1-66.2z"/></svg>
+              <span>
+                <span class="sb-top">Disponível</span><br />
+                <span class="sb-main">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#topo" class="brand"><span class="brand-mark"><img src="assets/capybara-white.png" alt="" width="28" height="28" /></span> Lochos</a>
+          <p>Segurança pessoal ativada por voz. Um pedido de socorro discreto, para os momentos em que pedir ajuda em voz alta não é uma opção.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Produto</h4>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#planos">Planos</a>
+            <a href="#faq">Dúvidas</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacidade.html">Política de Privacidade</a>
+            <a href="termos.html">Termos de Uso</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contato</h4>
+            <a href="mailto:contato@lochos.com.br">contato@lochos.com.br</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Lochos. Todos os direitos reservados.</span>
+        <span>Feito com cuidado para proteger quem precisa.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
