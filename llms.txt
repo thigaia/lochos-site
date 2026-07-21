@@ -1,0 +1,45 @@
+# Lochos
+
+> Lochos é um app de segurança pessoal ativado por voz: uma palavra-chave discreta
+> dispara, em silêncio, um alerta com localização para contatos de confiança.
+
+## O que é
+
+Lochos é um aplicativo Android de segurança pessoal contra coação. A cada
+desbloqueio do celular, o app grava discretamente alguns segundos de áudio e
+verifica se uma palavra-chave de emergência (escolhida pelo próprio usuário,
+sem levantar suspeita — ex: "exatamente", "entendido") foi dita. Se detectada,
+dispara um protocolo de alerta silencioso: envia SMS com a localização do
+usuário para os contatos de confiança cadastrados, sem nenhuma indicação
+visual ou sonora de que algo aconteceu.
+
+O caso de uso central é permitir que alguém sob coação — violência doméstica,
+assalto, situação de risco — peça socorro sem que o agressor perceba.
+
+## Como funciona
+
+- A verificação da palavra-chave acontece na nuvem (transcrição de áudio) e
+  exige conexão com a internet.
+- O áudio não é armazenado: é transcrito para verificar a palavra-chave e
+  descartado em seguida.
+- O alerta (SMS com localização) é enviado de forma resiliente, mesmo com o
+  app fechado ou o celular reiniciado.
+- Autenticação via conta Google ou uso anônimo.
+
+## Planos
+
+- **Gratuito** — SMS de alerta para 1 contato, atraso fixo de 1 minuto.
+- **Premium** (assinatura mensal) — GPS no alerta, mensagens editáveis, atraso
+  e recorrência de envio configuráveis, até 3 contatos.
+
+## Links
+
+- Site: https://lochos.com.br/
+- Política de Privacidade: https://lochos.com.br/privacidade.html
+- Termos de Uso: https://lochos.com.br/termos.html
+
+## Aviso importante
+
+O Lochos é uma ferramenta complementar de segurança pessoal e não substitui os
+serviços oficiais de emergência do Brasil: 190 (Polícia Militar), 192 (SAMU) e
+180 (Central de Atendimento à Mulher).
