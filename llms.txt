@@ -34,9 +34,9 @@ assalto, situação de risco — peça socorro sem que o agressor perceba.
 
 ## Links
 
-- Site: https://lochos.com.br/
-- Política de Privacidade: https://lochos.com.br/privacidade.html
-- Termos de Uso: https://lochos.com.br/termos.html
+- [Site](https://lochos.com.br/): página principal do Lochos
+- [Política de Privacidade](https://lochos.com.br/privacidade.html)
+- [Termos de Uso](https://lochos.com.br/termos.html)
 
 ## Aviso importante
 
