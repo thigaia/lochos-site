@@ -12,6 +12,23 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
+  // Menu mobile
+  var toggle = document.querySelector(".nav-toggle");
+  var mobileNav = document.getElementById("mobile-nav");
+  if (toggle && header && mobileNav) {
+    var closeMenu = function () {
+      header.classList.remove("nav-open");
+      toggle.setAttribute("aria-expanded", "false");
+    };
+    toggle.addEventListener("click", function () {
+      var isOpen = header.classList.toggle("nav-open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+    mobileNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeMenu);
+    });
+  }
+
   // Ano atual no rodapé
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
