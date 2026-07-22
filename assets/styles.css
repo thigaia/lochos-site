@@ -95,6 +95,7 @@ p { color: var(--text-2); }
   border: 1px solid rgba(92, 138, 255, .28);
   border-radius: 100px;
   background: rgba(92, 138, 255, .07);
+  margin-bottom: 1rem;
 }
 .gold-text { color: var(--gold-light); }
 .lead { font-size: clamp(1.05rem, 2.2vw, 1.28rem); color: var(--text-2); max-width: 42ch; }
@@ -201,10 +202,16 @@ section[id] { scroll-margin-top: 88px; }
 .hero-grid { display: grid; gap: clamp(2.5rem, 6vw, 4rem); align-items: center; }
 @media (min-width: 900px) { .hero-grid { grid-template-columns: 1.05fr .95fr; } }
 
-.hero h1 { margin: 1.15rem 0 1.25rem; }
+.hero h1 { margin: 0 0 1.25rem; }
 .hero h1 .hl { color: var(--primary-light); }
 .hero .lead { max-width: 46ch; }
-.hero-cta { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-top: 2rem; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; margin-top: 2rem; }
+.link-inline {
+  display: inline-flex; align-items: center; gap: .4rem;
+  color: var(--text); font-weight: 700; font-size: .95rem;
+  padding: .5rem 0; transition: color .2s, gap .2s;
+}
+.link-inline:hover { color: var(--primary-light); gap: .6rem; }
 .hero-trust { display: flex; flex-wrap: wrap; gap: 1.1rem 1.6rem; margin-top: 2.2rem; color: var(--text-2); font-size: .9rem; }
 .hero-trust span { display: inline-flex; align-items: center; gap: .5rem; }
 .hero-trust svg { width: 18px; height: 18px; color: var(--success); flex: none; }
