@@ -35,7 +35,7 @@
   --radius: 18px;
   --radius-sm: 12px;
   --gap: clamp(1rem, 4vw, 2rem);
-  --section-y: clamp(4rem, 9vw, 7.5rem);
+  --section-y: clamp(5rem, 9vw, 7.5rem);
 
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
 
@@ -217,7 +217,7 @@ section[id] { scroll-margin-top: 88px; }
   filter: blur(6px);
 }
 .hero-capy {
-  position: relative; width: min(66%, 320px);
+  position: relative; width: min(66%, 320px); height: auto;
   filter: drop-shadow(0 20px 45px rgba(92, 138, 255, .35));
   animation: breathe 5.5s var(--ease) infinite;
 }
@@ -229,6 +229,10 @@ section[id] { scroll-margin-top: 88px; }
 }
 .pulse-ring:nth-child(2) { animation-delay: 1.3s; }
 .pulse-ring:nth-child(3) { animation-delay: 2.6s; }
+@media (max-width: 899px) {
+  .hero-visual { min-height: 0; max-width: 150px; margin-inline: auto; }
+  .hero-capy { width: 100%; }
+}
 @keyframes pulse { 0% { transform: scale(.7); opacity: .8; } 100% { transform: scale(1.7); opacity: 0; } }
 
 /* ---------- Cards genéricos ---------- */
